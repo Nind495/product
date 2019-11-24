@@ -1,71 +1,72 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using  products.ServiceReference1;
-
-namespace products
+﻿namespace products
 {
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Data;
+    using System.Drawing;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
+    using WcfProduct;
+
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-            Service1Client service = new Service1Client();
-            DBGClient.DataSource = service.selectClientAll();
-            DBGProduct.DataSource = service.Selectproduct();
-            DBGSale.DataSource = service.SelectSaleAll();
+            ServiceProduct service = new ServiceProduct();
+            DBGClient.DataSource = service.SelectClient();
+            DBGProduct.DataSource = service.SelectProduct();
+            DBGSale.DataSource = service.SelectSale();
         }
 
         private void BTAddClient_Click(object sender, EventArgs e)
         {
             try
             {
-                Tclient client = new Tclient();
-                client.Firstname = tbFirstname.Text;
-                client.Lastname = tbLastname.Text;
-                Service1Client service;
-                service = new Service1Client();
+                Client client = new Client();
+                client.FirstName = tbFirstname.Text;
+                client.LastName = tbLastname.Text;
+                ServiceProduct service;
+                service = new ServiceProduct();
                 
 
-                if (service.insertClient(client) == 1) ;
+                if (service.InsertClient(client) == 1)
                 {
                     MessageBox.Show("Запись добавлена");
-                    DBGClient.DataSource=service.selectClientAll();
+                    DBGClient.DataSource = service.SelectClient();
                 }
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
-                Console.WriteLine(exception);
+                Console.WriteLine(ex);
                 throw;
-            }    
-        
-          
+            }  
         }
 
         private void BTView_Click(object sender, EventArgs e)
         {
-            Service1Client service = new Service1Client();
-            DBGClient.DataSource = service.selectClientAll();
+            ServiceProduct service = new ServiceProduct();
+            DBGClient.DataSource = service.SelectClient();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Service1Client service = new Service1Client();
-            DBGProduct.DataSource = service.Selectproduct();
+            ServiceProduct service = new ServiceProduct();
+            DBGProduct.DataSource = service.SelectProduct();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Service1Client service = new Service1Client();
-            DBGSale.DataSource = service.SelectSaleAll();
-            //MessageBox.Show(service.SelectSaleAll());
+            ServiceProduct service = new ServiceProduct();
+            DBGSale.DataSource = service.SelectSale();
         }
-      
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

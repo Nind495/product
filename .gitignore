@@ -3,3 +3,12 @@
 ################################################################################
 
 *.suo
+/products/obj/Debug
+/.vs/products/v15/Server/sqlite3
+/.vs/products/DesignTimeBuild
+/products/bin/Debug
+/products/.vscode
+/ServerWcFProduct/bin/Debug
+/ServerWcFProduct/obj/Debug
+/WcfServiceLibrary1/bin/Debug
+/WcfServiceLibrary1/obj/Debug

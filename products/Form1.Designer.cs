@@ -49,41 +49,46 @@
             // 
             // tbFirstname
             // 
-            this.tbFirstname.Location = new System.Drawing.Point(103, 273);
+            this.tbFirstname.Location = new System.Drawing.Point(77, 222);
+            this.tbFirstname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbFirstname.Name = "tbFirstname";
-            this.tbFirstname.Size = new System.Drawing.Size(100, 22);
+            this.tbFirstname.Size = new System.Drawing.Size(76, 20);
             this.tbFirstname.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 276);
+            this.label2.Location = new System.Drawing.Point(34, 224);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 17);
+            this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Имя";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(209, 276);
+            this.label3.Location = new System.Drawing.Point(157, 224);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 17);
+            this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Фамилия";
             // 
             // tbLastname
             // 
-            this.tbLastname.Location = new System.Drawing.Point(295, 276);
+            this.tbLastname.Location = new System.Drawing.Point(221, 224);
+            this.tbLastname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbLastname.Name = "tbLastname";
-            this.tbLastname.Size = new System.Drawing.Size(100, 22);
+            this.tbLastname.Size = new System.Drawing.Size(76, 20);
             this.tbLastname.TabIndex = 4;
             // 
             // BTAddClient
             // 
-            this.BTAddClient.Location = new System.Drawing.Point(438, 270);
+            this.BTAddClient.Location = new System.Drawing.Point(328, 219);
+            this.BTAddClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BTAddClient.Name = "BTAddClient";
-            this.BTAddClient.Size = new System.Drawing.Size(92, 28);
+            this.BTAddClient.Size = new System.Drawing.Size(69, 23);
             this.BTAddClient.TabIndex = 5;
             this.BTAddClient.Text = "Добавить";
             this.BTAddClient.UseVisualStyleBackColor = true;
@@ -91,9 +96,10 @@
             // 
             // BTView
             // 
-            this.BTView.Location = new System.Drawing.Point(1226, 433);
+            this.BTView.Location = new System.Drawing.Point(920, 352);
+            this.BTView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BTView.Name = "BTView";
-            this.BTView.Size = new System.Drawing.Size(92, 28);
+            this.BTView.Size = new System.Drawing.Size(69, 23);
             this.BTView.TabIndex = 6;
             this.BTView.Text = "Показать";
             this.BTView.UseVisualStyleBackColor = true;
@@ -102,17 +108,19 @@
             // DBGClient
             // 
             this.DBGClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBGClient.Location = new System.Drawing.Point(30, 35);
+            this.DBGClient.Location = new System.Drawing.Point(22, 28);
+            this.DBGClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DBGClient.Name = "DBGClient";
             this.DBGClient.RowTemplate.Height = 24;
-            this.DBGClient.Size = new System.Drawing.Size(552, 221);
+            this.DBGClient.Size = new System.Drawing.Size(414, 180);
             this.DBGClient.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1226, 488);
+            this.button1.Location = new System.Drawing.Point(920, 396);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 28);
+            this.button1.Size = new System.Drawing.Size(69, 23);
             this.button1.TabIndex = 8;
             this.button1.Text = "Показать";
             this.button1.UseVisualStyleBackColor = true;
@@ -121,44 +129,49 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(918, 444);
+            this.label4.Location = new System.Drawing.Point(688, 361);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(279, 17);
+            this.label4.Size = new System.Drawing.Size(214, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Отобразить записи из таблицы Клиенты";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(918, 499);
+            this.label5.Location = new System.Drawing.Point(688, 405);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(290, 17);
+            this.label5.Size = new System.Drawing.Size(223, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "Отобразить записи из таблицы  Продукты";
             // 
             // DBGProduct
             // 
             this.DBGProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBGProduct.Location = new System.Drawing.Point(707, 35);
+            this.DBGProduct.Location = new System.Drawing.Point(530, 28);
+            this.DBGProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DBGProduct.Name = "DBGProduct";
             this.DBGProduct.RowTemplate.Height = 24;
-            this.DBGProduct.Size = new System.Drawing.Size(462, 221);
+            this.DBGProduct.Size = new System.Drawing.Size(346, 180);
             this.DBGProduct.TabIndex = 11;
             // 
             // DBGSale
             // 
             this.DBGSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBGSale.Location = new System.Drawing.Point(30, 328);
+            this.DBGSale.Location = new System.Drawing.Point(22, 266);
+            this.DBGSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DBGSale.Name = "DBGSale";
             this.DBGSale.RowTemplate.Height = 24;
-            this.DBGSale.Size = new System.Drawing.Size(668, 204);
+            this.DBGSale.Size = new System.Drawing.Size(501, 166);
             this.DBGSale.TabIndex = 12;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1226, 388);
+            this.button2.Location = new System.Drawing.Point(920, 315);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 25);
+            this.button2.Size = new System.Drawing.Size(69, 20);
             this.button2.TabIndex = 13;
             this.button2.Text = "Показать";
             this.button2.UseVisualStyleBackColor = true;
@@ -167,17 +180,18 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(918, 396);
+            this.label6.Location = new System.Drawing.Point(688, 322);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(280, 17);
+            this.label6.Size = new System.Drawing.Size(216, 13);
             this.label6.TabIndex = 14;
             this.label6.Text = "Отобразить записи из таблицы Продажи";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1376, 585);
+            this.ClientSize = new System.Drawing.Size(1032, 475);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.DBGSale);
@@ -192,8 +206,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbFirstname);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DBGClient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DBGProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DBGSale)).EndInit();
